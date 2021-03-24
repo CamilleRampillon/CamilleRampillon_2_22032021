@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style_notation.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8a3ba248fa.js" crossorigin="anonymous"></script>
 </head>
@@ -12,20 +13,40 @@
 	<div>
 		<header >
 			<img id="logo" src="../images/Reservia@3x.png" alt="Logo de l'agence">
-            
-            <div>
-                <h2> Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p> En plein centre ville ou en plein nature</p>
-            </div>
+
 			<nav>
-					<a href="">Hébergements</a>
-					<a href="">Activités</a>
+				<a href="#hebergements">Hébergements</a>
+				<a href="#activites">Activités</a>
 			</nav>
             <a href="">S'inscrire</a>
 		</header>
-        <!-- TODO #1 créer la section de recherche + les filtres-->
+        <!-- section regroupant phrase d'accroche + formulaire de recherche + filtres + phrase d'information-->
+        <section>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form>
+                <input type="text" placeholder="Marseille, France">
+                <button type="submit"><i class="fas fa-map-marker-alt"></i></button>
+                <button type="submit"><i class="fas fa-search"></i></button>
+                <button type="submit">Rechercher</button>
+            </form>
+
+            <div>
+                <h2>Filtres</h2>
+                <ul>
+                    <li><i class="fas fa-money-bill-wave"></i>Économique</li>
+                    <li><i class="fas fa-child"></i>Familial</li>
+                    <li><i class="fas fa-heart"></i>Romantique</li>
+                    <li><i class="fas fa-dog"></i>Animaux autorisés</li>
+                </ul>
+            </div>
+            <div>
+                <i class="fas fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
 		<main>
-            <section>
+            <section id="hebergements">
                     <i class="fas fa-info"> Plus de 500 logements sont disponibles dans cette ville</i>
                     <section>
                         <h2> Hébergements à Marseille</h2>
@@ -162,7 +183,7 @@
                     </section>
                 
             </section>
-            <section>
+            <section id="activites">
                 <h2>Activités à Marseille</h2>
                 <article>
                     <img src="" alt="Vieux Port">
