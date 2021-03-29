@@ -33,3 +33,30 @@ body {
     color: #0065fc;
     transition: 300ms;
 }
+
+
+/*Footer*/
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    
+}
+.footerColumn{
+    margin-right: auto;
+    padding-left: 30px;
+}
+.footerColumn ul{
+    padding: 0;
+}
+.footerLink{
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+
