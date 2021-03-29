@@ -33,12 +33,133 @@ body {
     color: #0065fc;
     transition: 300ms;
 }
+/*Main*/
 
+/*Search*/
+.searchForm{
+    display: flex;
+    height: 45px;
 
+}
+.mapIcon{
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    padding: 6px 15px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+}
+.searchBar{
+    border: #F2F2F2  solid 2px;
+    padding: 3px 3px;
+    color: black;
+}
+::placeholder{
+    color: black;
+}
+.searchIcon{
+    padding: 7px 12px;
+    color: white;
+    list-style: none;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background-color:#0065FC;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.searchIcon a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.searchSlogan{
+    margin-bottom: 20px;
+}
+.searchSlogan p{
+    margin: 0;
+}
+.searchSlogan h3{
+    margin: auto;
+    margin-top: 20px;
+}
+/* Search Filter*/
+.filter{
+    display: flex;
+    align-items: center;
+}
+.filterLink{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    border:#F2F2F2 2px solid;
+    border-radius: 25px;
+    width: auto;
+    flex-wrap: wrap;
+}
+.filterLink a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.filterLink a:hover{
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    color: black;
+    transition: 300ms;
+}
+.filterIcon{
+    color:#0065FC;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.filterText span{
+    font-weight: 600;
+    color: black;
+    padding: 6px;
+}
+.filterText{
+    padding: 0 9px;
+    color: black;
+    font-weight: 600;
+}
+ /*Search Info*/
+.info{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+.infoIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #F2F2F2 2px solid;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.fa-info:before{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #0065FC;
+}
+.infoText{
+    font-size: 15px;
+    font-weight: 400;
+}
 /*Footer*/
 .footerContent{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #F2F2F2;
     
 }
@@ -54,7 +175,6 @@ body {
     text-decoration: none;
     color: black;
 }
-
 ul li {
     list-style: none;
 }
