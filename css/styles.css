@@ -166,6 +166,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
 }
+
 /*Herbergements à Marseille*/
 .hotelBlock{
     display: flex;
@@ -204,7 +205,8 @@ main{
     margin: auto;
     padding: 4px 0;
 }
-.hotelArticle :hover{
+.hotelArticle:hover{
+    
     box-shadow: 0 3px 10px 1px #7e7e7e;
     transition: 300ms;
 }
@@ -291,6 +293,22 @@ main{
     padding: 4px;
     height: 100%;
 }
+/*Image*/
+.popularHotelImgBlock{
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+}
+.popularHotelImg{
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 100%;
+    width: 100%;
+    max-height: 120px;
+}
+/*Description de l'hotel*/
 .popularHotelDescription{
     display: flex;
     flex-direction: column;
@@ -307,20 +325,60 @@ main{
 .popularHotelTarif{
     margin-top: 0;
 }
-.popularHotelImgBlock{
-    min-height: 100%;
-    width: 33%;
-    min-width: 33%;
-    max-width: 33%;
+
+/*Activites*/
+#activites{
+    margin-bottom: 50px;
 }
-.popularHotelImg{
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    height: 100%;
+.activiteList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#activites a{
+    text-decoration: none;
+    color: black;
+}
+#activites p{
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: 600;
+}
+.activiteBlockOneArticle{
+    width: 24%;
+}
+.activiteBlockTwoArticles{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activiteArticleBig{
+    box-shadow: 0 3px 10px 1px #7e7e7e;
+    border-radius: 15px;
+}
+.activiteArticleMedium{
+    box-shadow: 0 3px 10px 1px #7e7e7e;
+    border-radius: 15px;
+}
+.activiteImgBig{
+    height: 400px;
     width: 100%;
-    max-height: 120px;
+    object-fit: cover;    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
+.activiteImgMedium{
+    height: 156px;
+    width: 100%;
+    object-fit: cover;    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
 /*Footer*/
 .footerContent{
     display: flex;
