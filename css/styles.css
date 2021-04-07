@@ -11,13 +11,19 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
   margin: 0;
+}
+.container {
+  font-family: "Raleway", sans-serif;
+  max-width: 1500px;
+  margin: auto;
+  display: block;
 }
 main {
   width: 96%;
   margin: 0% 2.5%;
 }
+
 /*Header*/
 .header {
   align-items: center;
@@ -107,28 +113,30 @@ main {
   font-weight: 600;
   font-family: "Raleway_2", serif;
 }
+.mobileSearchIcon {
+  display: none;
+}
 .searchSlogan {
   margin-bottom: 20px;
 }
 .searchSlogan h1 {
-    margin-bottom: 20px;
-    font-family: "Raleway_2", serif;
-  }
+  margin-bottom: 20px;
+  font-family: "Raleway_2", serif;
+}
 .searchSlogan p {
   margin: 0;
 }
 .searchSlogan h3 {
   margin: auto;
   margin-top: 20px;
-
 }
 /* Search Filter*/
 .filter {
   display: flex;
   align-items: center;
 }
-.filter h2{
-    font-family: "Raleway_2", serif;
+.filter h2 {
+  font-family: "Raleway_2", serif;
 }
 .filterLink {
   display: flex;
@@ -273,8 +281,8 @@ main {
   padding-left: 8px;
   padding-top: 5px;
 }
-.hotelName{
-    font-family: "Raleway_2", serif;
+.hotelName {
+  font-family: "Raleway_2", serif;
 }
 .stars {
   align-items: flex-end;
@@ -381,8 +389,8 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-#activites h3{
-    font-family: "Raleway_2", serif;
+#activites h3 {
+  font-family: "Raleway_2", serif;
 }
 #activites a {
   text-decoration: none;
@@ -409,16 +417,16 @@ main {
   border-radius: 15px;
 }
 .activiteArticleBig:hover {
-    box-shadow: 0 3px 10px 1px #7e7e7e;
-    transition: 300ms;
-  }
+  box-shadow: 0 3px 10px 1px #7e7e7e;
+  transition: 300ms;
+}
 .activiteArticleMedium {
   border-radius: 15px;
 }
 .activiteArticleMedium:hover {
-    box-shadow: 0 3px 10px 1px #7e7e7e;
-    transition: 300ms;
-  }
+  box-shadow: 0 3px 10px 1px #7e7e7e;
+  transition: 300ms;
+}
 .activiteImgBig {
   height: 400px;
   width: 100%;
@@ -444,6 +452,9 @@ main {
   margin-right: auto;
   padding-left: 30px;
 }
+.footerColumn h3 {
+  font-family: "Raleway_2", serif;
+}
 .footerColumn ul {
   padding: 0;
 }
@@ -454,4 +465,215 @@ main {
 }
 ul li {
   list-style: none;
+}
+
+/*Media queries (responsive)*/
+/*version mobile*/
+@media screen and (max-width: 400px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  main {
+    width: 96%;
+    margin: 0% 2.5%;
+  }
+
+  /*Header (mobile)*/
+  .header {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+  }
+  .logo {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: white;
+  }
+  .headerNav {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .register {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+  }
+  .navLink {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    border-top: hidden;
+    padding: 5px 0 5px 0;
+    border-bottom: #d8d8d8 3px solid;
+    background-color: white;
+  }
+  .navLinkHover:hover {
+    border-top: hidden;
+    padding: 15px 0 8px 0;
+    border-bottom: #0065fc 3px solid;
+  }
+
+  /*Main (mobile)*/
+  /*Search (mobile)*/
+  .searchSection {
+    margin-top: 150px;
+  }
+  .searchSlogan {
+    padding-left: 8px;
+  }
+  .searchSlogan h1 {
+    margin-bottom: 8px;
+  }
+  .searchForm {
+    width: 100%;
+  }
+  .searchIcon {
+    display: none;
+  }
+  .mobileSearchIcon {
+    display: flex;
+    padding: 6px 15px;
+    background-color: #0065fc;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+  }
+  .fa-search {
+    color: white;
+  }
+
+  /* Search Filter (mobile)*/
+  .filter {
+    flex-wrap: wrap;
+  }
+  .filter h2 {
+    width: 100%;
+  }
+
+  /*Hebergements (mobile)*/
+  #hebergements {
+    flex-direction: column-reverse;
+  }
+
+  /* Hebergements populaires (mobile)*/
+  .popularHotelBlock {
+    border-radius: 0;
+    margin: auto;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .popularHotelBlockTitle {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .popularHotelBlockTitle h3 {
+    padding-left: 10px;
+  }
+  .popularHotelBlockTitle i {
+    padding-right: 10px;
+  }
+  .popularHotelList {
+    margin: 0;
+    width: 100%;
+  }
+  .popularHotelArticle {
+    min-width: 200px;
+    width: 88%;
+  }
+  .popularHotelArticle:hover {
+    min-width: 200px;
+    width: 88%;
+    transition: 300ms;
+  }
+
+  /* Hebergements à Marseille (mobile)*/
+  .hotelBlock {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+  }
+  .hotelBlockTitle {
+    padding: 0;
+  }
+  .hotelBlockTitle h3 {
+    margin-left: 10px;
+  }
+  .hotelList {
+    flex-direction: column;
+  }
+  .hotelArticle {
+    width: 90%;
+    box-shadow: 0 0 5px 0 #7e7e7e;
+  }
+  .hotelArticle a {
+    width: 98%;
+  }
+  .hotelMore {
+    padding: 0;
+  }
+  .hotelMore a {
+    margin-left: 10px;
+  }
+
+  /* Activites (mobile) */
+  #activites {
+    flex-direction: column;
+  }
+  .activiteBlockTitle h3 {
+    margin-left: 10px;
+  }
+  .activiteList {
+    flex-direction: column;
+    align-content: center;
+  }
+  .activiteBlockOneArticle {
+    margin: auto;
+    width: 90%;
+  }
+  .activiteBlockTwoArticles {
+    margin: auto;
+    width: 90%;
+  }
+  .activiteArticleBig {
+    margin-bottom: 20px;
+  }
+  .activiteArticleMedium {
+    margin-bottom: 20px;
+  }
+  .activiteImgBig {
+    height: 125px;
+  }
+  .activiteImgMedium {
+    height: 125px;
+  }
+
+  /* Footer (mobile)*/
+  .footerContent {
+    flex-direction: column;
+  }
+  .footerColumn {
+    padding-top: 20px;
+  }
+  .footerColumn h3 {
+    font-family: "Raleway_2", serif;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .footerColumn a {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    line-height: 35px;
+  }
 }
