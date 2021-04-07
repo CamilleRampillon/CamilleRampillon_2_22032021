@@ -469,7 +469,7 @@ ul li {
 
 /*Media queries (responsive)*/
 /*version mobile*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   body {
     margin: 0;
     padding: 0;
@@ -676,4 +676,72 @@ ul li {
     margin-bottom: 8px;
     line-height: 35px;
   }
+}
+
+/*version tablette*/
+@media screen and (min-width: 480px) and (max-width:1024px)
+{
+    /*Hebergements (tablette)*/
+    #hebergements{
+        flex-direction: column-reverse;
+    }
+
+    /* Hebergements à Marseille (tablette)*/
+    .hotelBlock{
+        width: 100%;
+    }
+    .hotelBlockTitle{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .hotelMore{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Hebergements populaires (tablette)*/
+    .popularHotelBlock{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .popularHotelBlockTitle{
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+
+    /* Activites (tablette)*/                                                             /* activiter pour la partit tablette */
+    #activites{
+        flex-direction: column;
+    }
+    .activiteBlockTitle{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .activiteList{
+        flex-direction: column;
+        align-content: center;
+    }
+    .activiteBlockOneArticle {
+        margin: auto;
+        width: 70%;
+    }
+    .activiteBlockTwoArticles{
+        margin: auto;
+        width: 70%;
+    }
+    .activiteArticleBig{
+        margin-bottom: 20px;
+    }
+    .activiteArticleMedium{
+        margin-bottom: 20px;
+    }
+    .activiteImgBig{
+        height: 125px;
+    }
+    .activiteImgMedium{
+        height: 125px;
+    }
 }
