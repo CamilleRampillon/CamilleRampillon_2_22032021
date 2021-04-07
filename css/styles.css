@@ -56,7 +56,7 @@ main {
 .navLink {
   color: black;
 }
-.navLink:hover {
+.navLinkHover:hover {
   border-top: solid 3px #0065fc;
   padding-top: 23px;
   color: #0065fc;
