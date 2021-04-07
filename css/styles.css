@@ -1,405 +1,457 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
+/* Font Face : Raleway */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
 }
-main{
-	width: 96%;
-    margin: auto;
+
+@font-face {
+  font-family: "Raleway_2";
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+main {
+  width: 96%;
+  margin: 0% 2.5%;
 }
 /*Header*/
 .header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    width: 96%;
-    margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  margin: auto;
+  position: fixed;
+  flex-direction: row;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  z-index: 1000;
 }
-.navLink, .register{
-    text-decoration: none;
-    border-top: solid 3px transparent;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 2.6rem;
+.logo {
+  margin-left: 2.5%;
 }
-.register{
-    color: #0065fc;
-    font-weight: bold;
+#logo {
+  height: 50px;
+  margin: 15px 15px 15px 0px;
 }
-.navLink{
-    color: black;
+.navLink,
+.register {
+  text-decoration: none;
+  border-top: solid 3px transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2.6rem;
 }
-.navLink:hover{
-    border-top: solid 3px #0065fc;
-    padding-top: 23px;
-    color: #0065fc;
-    transition: 300ms;
+.register {
+  color: #0065fc;
+  font-family: "Raleway_2", serif;
+}
+.navLink {
+  color: black;
+}
+.navLink:hover {
+  border-top: solid 3px #0065fc;
+  padding-top: 23px;
+  color: #0065fc;
+  transition: 300ms;
 }
 /*Main*/
 
 /*Search*/
-.searchForm{
-    display: flex;
-    height: 45px;
-
+.searchSection {
+  margin-top: 100px;
 }
-.mapIcon{
-    border-top-left-radius: 13px;
-    border-bottom-left-radius: 13px;
-    padding: 6px 15px;
-    background-color: #F2F2F2;
-    display: flex;
-    align-items: center;
+.searchForm {
+  display: flex;
+  height: 45px;
 }
-.searchBar{
-    border: #F2F2F2  solid 2px;
-    padding: 3px 3px;
-    color: black;
+.mapIcon {
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  padding: 6px 15px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
 }
-::placeholder{
-    color: black;
+.searchBar {
+  border: #f2f2f2 solid 2px;
+  padding: 3px 3px;
+  color: black;
+  font-family: "Raleway_2", serif;
 }
-.searchIcon{
-    padding: 7px 12px;
-    color: white;
-    list-style: none;
-    border-top-right-radius: 13px;
-    border-bottom-right-radius: 13px;
-    background-color:#0065FC;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+::placeholder {
+  color: black;
+  font-family: "Raleway_2", serif;
+}
+.searchIcon {
+  padding: 7px 12px;
+  color: white;
+  list-style: none;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  background-color: #0065fc;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .searchIcon a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: "Raleway_2", serif;
 }
-.searchSlogan{
+.searchSlogan {
+  margin-bottom: 20px;
+}
+.searchSlogan h1 {
     margin-bottom: 20px;
+    font-family: "Raleway_2", serif;
+  }
+.searchSlogan p {
+  margin: 0;
 }
-.searchSlogan p{
-    margin: 0;
-}
-.searchSlogan h3{
-    margin: auto;
-    margin-top: 20px;
+.searchSlogan h3 {
+  margin: auto;
+  margin-top: 20px;
+
 }
 /* Search Filter*/
-.filter{
-    display: flex;
-    align-items: center;
+.filter {
+  display: flex;
+  align-items: center;
 }
-.filterLink{
-    display: flex;
-    margin: 10px;
-    align-items: center;
-    border:#F2F2F2 2px solid;
-    border-radius: 25px;
-    width: auto;
-    flex-wrap: wrap;
+.filter h2{
+    font-family: "Raleway_2", serif;
 }
-.filterLink a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+.filterLink {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  border: #f2f2f2 2px solid;
+  border-radius: 25px;
+  width: auto;
+  flex-wrap: wrap;
 }
-.filterLink a:hover{
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    color: black;
-    transition: 300ms;
+.filterLink a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-.filterIcon{
-    color:#0065FC;
-    background-color: #DEEBFF;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.filterLink a:hover {
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  color: black;
+  transition: 300ms;
+}
+.filterIcon {
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.filterText span{
-    font-weight: 600;
-    color: black;
-    padding: 6px;
+.filterText span {
+  font-weight: 600;
+  color: black;
+  padding: 6px;
 }
-.filterText{
-    padding: 0 9px;
-    color: black;
-    font-weight: 600;
+.filterText {
+  padding: 0 9px;
+  color: black;
+  font-weight: 600;
+  font-family: "Raleway_2", serif;
 }
- /*Search Info*/
-.info{
-    display: flex;
-    align-items: center;
-    margin: 30px 0;
+/*Search Info*/
+.info {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
 }
-.infoIcon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: #F2F2F2 2px solid;
-    height: 23px;
-    width: 23px;
-    border-radius: 50%;
-    margin-right: 8px;
+.infoIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #f2f2f2 2px solid;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  margin-right: 8px;
 }
-.fa-info:before{
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    color: #0065FC;
+.fa-info:before {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #0065fc;
 }
-.infoText{
-    font-size: 15px;
-    font-weight: 400;
+.infoText {
+  font-size: 15px;
+  font-weight: 400;
 }
 /*Hebergements*/
-#hebergements{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+#hebergements {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*Herbergements à Marseille*/
-.hotelBlock{
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    width: 68%;
-    border-radius: 15px;
+.hotelBlock {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  width: 68%;
+  border-radius: 15px;
 }
-.hotelBlockTitle{
-    padding-left: 38px;
+.hotelBlockTitle {
+  padding-left: 38px;
 }
-.hotelBlockTitle h3{
-    margin: 15px 0;;
+.hotelBlockTitle h3 {
+  margin: 15px 0;
+  font-family: "Raleway_2", serif;
 }
-.hotelList{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+.hotelList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-.hotelArticle{
-    background-color: white;
-    border-radius: 15px;
-    display: flex;
-    margin: auto;
-    width: 26%;
-    min-width: 200px;
-    margin-bottom: 20px;
+.hotelArticle {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  margin: auto;
+  width: 26%;
+  min-width: 200px;
+  margin-bottom: 20px;
 }
-.hotelArticle a{
-    text-decoration: none;
-    color: black;
-    border-radius: 15px;
-    width: 95%;
-    margin: auto;
-    padding: 4px 0;
+.hotelArticle a {
+  text-decoration: none;
+  color: black;
+  border-radius: 15px;
+  width: 95%;
+  margin: auto;
+  padding: 4px 0;
 }
-.hotelArticle:hover{
-    
-    box-shadow: 0 3px 10px 1px #7e7e7e;
-    transition: 300ms;
+.hotelArticle:hover {
+  box-shadow: 0 3px 10px 1px #7e7e7e;
+  transition: 300ms;
 }
-.hotelArticle h4, .tarif{
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
+.hotelArticle h4,
+.tarif {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
-.tarif{
-    font-weight: bolder;
-    padding-bottom: 5px;
+.tarif {
+  font-weight: bolder;
+  padding-bottom: 5px;
 }
 /*Image*/
-.hotelImg{
-    height: 100px;
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+.hotelImg {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 /*Description de l'hotel*/
-.hotelDescription{
-    
-    padding-left: 8px;
-    padding-top: 5px;
+.hotelDescription {
+  padding-left: 8px;
+  padding-top: 5px;
 }
-.stars{
-    align-items: flex-end;
+.hotelName{
+    font-family: "Raleway_2", serif;
 }
-.blue{
-    color: #0065FC;
+.stars {
+  align-items: flex-end;
 }
-.gray{
-    color: #a8a8a8;
+.blue {
+  color: #0065fc;
 }
-.hotelMore{
-    padding: 20px 38px;
+.gray {
+  color: #a8a8a8;
 }
-.hotelMore a{
-    text-decoration: none;
-    color: black;
-    font-weight: 800;
+.hotelMore {
+  padding: 20px 38px;
+}
+.hotelMore a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-family: "Raleway_2", serif;
 }
 
 /*Hebergements populaires*/
-.popularHotelBlock{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    border-radius: 15px;
-    background-color: #F2F2F2;
+.popularHotelBlock {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: 15px;
+  background-color: #f2f2f2;
 }
-.popularHotelBlockTitle{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.popularHotelBlockTitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Raleway_2", serif;
 }
-.popularHotelArticle{
-    background-color: white;
-    border-radius: 15px;
-    box-sizing: border-box;
-    margin: 20px auto;
-    min-width: 240px;
-    height: 130px;
-    min-height: 130px;
-    width: 80%;
+.popularHotelArticle {
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  min-width: 240px;
+  height: 130px;
+  min-height: 130px;
+  width: 80%;
 }
-.popularHotelArticle:hover{
-    background-color: white;
-    border-radius: 15px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    min-width: 240px;
-    height: 130px;
-    min-height: 130px;
-    box-shadow: 0 3px 10px 1px #7e7e7e;
-    width: 80%;
-    transition: 300ms;
+.popularHotelArticle:hover {
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  min-width: 240px;
+  height: 130px;
+  min-height: 130px;
+  box-shadow: 0 3px 10px 1px #7e7e7e;
+  width: 80%;
+  transition: 300ms;
 }
-.popularHotelArticle a{
-    text-decoration: none;
-    color: black;
-    display: flex;
-    padding: 4px;
-    height: 100%;
+.popularHotelArticle a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  padding: 4px;
+  height: 100%;
 }
 /*Image*/
-.popularHotelImgBlock{
-    min-height: 100%;
-    width: 33%;
-    min-width: 33%;
-    max-width: 33%;
+.popularHotelImgBlock {
+  min-height: 100%;
+  width: 33%;
+  min-width: 33%;
+  max-width: 33%;
 }
-.popularHotelImg{
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    height: 100%;
-    width: 100%;
-    max-height: 120px;
+.popularHotelImg {
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  height: 100%;
+  width: 100%;
+  max-height: 120px;
 }
 /*Description de l'hotel*/
-.popularHotelDescription{
-    display: flex;
-    flex-direction: column;
-    padding-left: 5px;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    padding-top: 5px;
-    margin-left: 7px;
+.popularHotelDescription {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  margin-left: 7px;
 }
-.popularHotelDescription h4{
-    font-weight: bold;
-    margin-bottom: 9px;
+.popularHotelDescription h4 {
+  font-weight: bold;
+  margin-bottom: 9px;
 }
-.popularHotelTarif{
-    margin-top: 0;
+.popularHotelTarif {
+  margin-top: 0;
 }
 
 /*Activites*/
-#activites{
-    margin-bottom: 50px;
+#activites {
+  margin-bottom: 50px;
 }
-.activiteList{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.activiteList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-#activites a{
-    text-decoration: none;
-    color: black;
+#activites h3{
+    font-family: "Raleway_2", serif;
 }
-#activites p{
-    padding-left: 10px;
-    padding-bottom: 15px;
-    padding-top: 5px;
-    margin: 0;
-    font-weight: 600;
+#activites a {
+  text-decoration: none;
+  color: black;
 }
-.activiteBlockOneArticle{
-    width: 24%;
+#activites p {
+  padding-left: 10px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  margin: 0;
+  font-weight: 600;
+  font-family: "Raleway_2", serif;
 }
-.activiteBlockTwoArticles{
-    width: 24%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.activiteBlockOneArticle {
+  width: 24%;
 }
-.activiteArticleBig{
+.activiteBlockTwoArticles {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.activiteArticleBig {
+  border-radius: 15px;
+}
+.activiteArticleBig:hover {
     box-shadow: 0 3px 10px 1px #7e7e7e;
-    border-radius: 15px;
+    transition: 300ms;
+  }
+.activiteArticleMedium {
+  border-radius: 15px;
 }
-.activiteArticleMedium{
+.activiteArticleMedium:hover {
     box-shadow: 0 3px 10px 1px #7e7e7e;
-    border-radius: 15px;
+    transition: 300ms;
+  }
+.activiteImgBig {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-.activiteImgBig{
-    height: 400px;
-    width: 100%;
-    object-fit: cover;    
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-.activiteImgMedium{
-    height: 156px;
-    width: 100%;
-    object-fit: cover;    
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+.activiteImgMedium {
+  height: 156px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 /*Footer*/
-.footerContent{
-    display: flex;
-    justify-content: space-around;
-    background-color: #F2F2F2;
-    
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f2f2;
 }
-.footerColumn{
-    margin-right: auto;
-    padding-left: 30px;
+.footerColumn {
+  margin-right: auto;
+  padding-left: 30px;
 }
-.footerColumn ul{
-    padding: 0;
+.footerColumn ul {
+  padding: 0;
 }
-.footerLink{
-    margin-top: 20px;
-    text-decoration: none;
-    color: black;
+.footerLink {
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
 }
 ul li {
-    list-style: none;
+  list-style: none;
 }
-
-
