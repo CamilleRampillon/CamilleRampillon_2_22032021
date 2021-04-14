@@ -19,13 +19,11 @@ body {
   margin: auto;
   display: block;
 }
-main {
-  width: 96%;
-  margin: 0% 2.5%;
-}
+
 
 /*Header*/
 .header {
+  max-width: 1500px;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -41,7 +39,6 @@ main {
   z-index: 1000;
 }
 .logo {
-  margin-left: 2.5%;
 }
 #logo {
   height: 50px;
@@ -225,6 +222,7 @@ main {
 }
 .hotelBlockTitle {
   padding-left: 38px;
+  height: 52px;
 }
 .hotelBlockTitle h3 {
   margin: 15px 0;
@@ -236,6 +234,7 @@ main {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 20px;
 }
 .hotelArticle {
   background-color: white;
@@ -316,6 +315,7 @@ main {
   justify-content: space-around;
   align-items: center;
   font-family: "Raleway_2", serif;
+  height: 52px;
 }
 .popularHotelArticle {
   background-color: white;
@@ -443,6 +443,9 @@ main {
 }
 
 /*Footer*/
+footer{
+    max-width: 1500px;
+}
 .footerContent {
   display: flex;
   justify-content: space-around;
@@ -469,7 +472,7 @@ ul li {
 
 /*Media queries (responsive)*/
 /*version mobile*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 670px) {
   body {
     margin: 0;
     padding: 0;
@@ -477,10 +480,6 @@ ul li {
   }
   .container {
     width: 100%;
-  }
-  main {
-    width: 96%;
-    margin: 0% 2.5%;
   }
 
   /*Header (mobile)*/
@@ -679,7 +678,7 @@ ul li {
 }
 
 /*version tablette*/
-@media screen and (min-width: 480px) and (max-width:1024px)
+@media screen and (min-width: 480px) and (max-width:1400px)
 {
     /*Hebergements (tablette)*/
     #hebergements{
