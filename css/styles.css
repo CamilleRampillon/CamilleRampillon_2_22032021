@@ -13,12 +13,12 @@
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  padding-right:0;
+  padding-right: 0;
 }
 
 .container {
   font-family: "Raleway", sans-serif;
-  max-width: 1500px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -26,7 +26,7 @@ body {
 
 /*Header*/
 .header {
-  max-width: 1500px;
+  max-width: 1200px;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -454,11 +454,11 @@ footer {
   background-color: #f2f2f2;
 }
 .footerContent {
-  display:flex;
+  display: flex;
   justify-content: space-around;
 }
 .footerColumn {
-    margin-right: auto;
+  margin-right: auto;
 }
 .footerColumn h3 {
   font-family: "Raleway_2", serif;
@@ -497,9 +497,9 @@ ul li {
   }
   .logo {
     width: 100%;
-    padding-left: 20px;
     padding-top: 10px;
     background-color: white;
+    margin-left: 4%;
   }
   .headerNav {
     width: 100%;
@@ -523,7 +523,7 @@ ul li {
     border-bottom: #d8d8d8 3px solid;
     background-color: white;
   }
-  .navLinkHoverMobile:hover {
+  .navLinkHover:hover {
     border-top: hidden;
     padding: 15px 0 8px 0;
     border-bottom: #0065fc 3px solid;
@@ -533,6 +533,7 @@ ul li {
   /*Search (mobile)*/
   .searchSection {
     margin-top: 150px;
+    margin-right: 4%;
   }
   .searchSlogan {
     padding-left: 8px;
@@ -545,21 +546,26 @@ ul li {
   .searchForm {
     width: 100%;
     margin-left: 4%;
-    padding-left: 10px;
+    margin-right: 4%;
+  }
+  .mapIcon {
+    width: 3%;
+  }
+  .searchBar {
+    width: 94%;
   }
   .searchIcon {
     display: none;
   }
-  .searchBar{
-      width:65%;
-  }
+
   .mobileSearchIcon {
     display: flex;
     padding: 6px 15px;
     background-color: #0065fc;
     border-radius: 13px;
-    display: flex;
     align-items: center;
+    width: 3%;
+    margin-right: 4%;
   }
   .fa-search {
     color: white;
@@ -572,10 +578,10 @@ ul li {
   }
   .filter h2 {
     width: 100%;
-    margin-left: 4%;
+    margin-left: 1%;
   }
 
-  .info{
+  .info {
     margin-left: 4%;
     padding-left: 10px;
     margin-right: 4%;
@@ -601,7 +607,6 @@ ul li {
 
   .popularHotelBlockTitle h3 {
     padding-left: 10px;
-    
   }
   .popularHotelBlockTitle i {
     padding-right: 10px;
@@ -642,7 +647,7 @@ ul li {
     width: 100%;
   }
   .hotelArticle {
-    min-width:200px;
+    min-width: 200px;
     width: 88%;
     box-shadow: 0 0 5px 0 #7e7e7e;
   }
@@ -662,7 +667,7 @@ ul li {
     flex-direction: column;
   }
   #activites p {
-      padding-left:0;
+    padding-left: 0;
   }
   .activiteBlockTitle {
     /*padding: 0;*/
@@ -680,12 +685,12 @@ ul li {
     width: 100%;
   }
   .activiteBlockOneArticle {
-    min-width:200px;
+    min-width: 200px;
     margin: auto;
     width: 88%;
   }
   .activiteBlockTwoArticles {
-    min-width:200px;
+    min-width: 200px;
     margin: auto;
     width: 88%;
   }
@@ -726,15 +731,25 @@ ul li {
 
 /*version tablette*/
 @media screen and (min-width: 670px) and (max-width: 1024px) {
-    body{
-        padding-right: 4%;
-    }
-    /*Header*/
-  .headerNav{
-      margin-right: 4%;
-      padding-right: 4%;
+  .container {
+    margin-left: 4%;
+    margin-right: 4%;
   }
-
+  /*Header*/
+  .headerNav {
+    margin-right: 4%;
+    padding-right: 4%;
+  }
+  /*Search section (tablette)*/
+  .mapIcon {
+    width: 5%;
+  }
+  .searchBar {
+    width: 80%;
+  }
+  .searchIcon {
+    width: 15%;
+  }
   /*Hebergements (tablette)*/
   #hebergements {
     flex-direction: column-reverse;
@@ -752,6 +767,7 @@ ul li {
   .hotelMore {
     display: flex;
     justify-content: center;
+    margin-bottom: 5px;
   }
 
   /* Hebergements populaires (tablette)*/
@@ -780,11 +796,11 @@ ul li {
   }
   .activiteBlockOneArticle {
     margin: auto;
-    width: 70%;
+    width: 80%;
   }
   .activiteBlockTwoArticles {
     margin: auto;
-    width: 70%;
+    width: 80%;
   }
   .activiteArticleBig {
     margin-bottom: 20px;
