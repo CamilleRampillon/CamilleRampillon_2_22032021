@@ -20,7 +20,6 @@ body {
   display: block;
 }
 
-
 /*Header*/
 .header {
   max-width: 1500px;
@@ -443,8 +442,8 @@ body {
 }
 
 /*Footer*/
-footer{
-    max-width: 1500px;
+footer {
+  max-width: 1500px;
 }
 .footerContent {
   display: flex;
@@ -495,6 +494,8 @@ ul li {
     padding-left: 20px;
     padding-top: 10px;
     background-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
   }
   .headerNav {
     width: 100%;
@@ -505,8 +506,9 @@ ul li {
   }
   .register {
     position: absolute;
-    top: -10px;
+    top: -2px;
     right: 20px;
+    margin-right: 4%;
   }
   .navLink {
     display: flex;
@@ -530,15 +532,22 @@ ul li {
   }
   .searchSlogan {
     padding-left: 8px;
+    margin-left: 4%;
+    padding-left: 10px;
   }
   .searchSlogan h1 {
     margin-bottom: 8px;
   }
   .searchForm {
     width: 100%;
+    margin-left: 4%;
+    padding-left: 10px;
   }
   .searchIcon {
     display: none;
+  }
+  .searchBar{
+      width:65%;
   }
   .mobileSearchIcon {
     display: flex;
@@ -555,9 +564,17 @@ ul li {
   /* Search Filter (mobile)*/
   .filter {
     flex-wrap: wrap;
+    margin-left: 4%;
   }
   .filter h2 {
     width: 100%;
+    margin-left: 4%;
+  }
+
+  .info{
+    margin-left: 4%;
+    padding-left: 10px;
+    margin-right: 4%;
   }
 
   /*Hebergements (mobile)*/
@@ -575,12 +592,16 @@ ul li {
   .popularHotelBlockTitle {
     width: 100%;
     justify-content: space-between;
+    margin-left: 4%;
   }
+
   .popularHotelBlockTitle h3 {
     padding-left: 10px;
+    
   }
   .popularHotelBlockTitle i {
     padding-right: 10px;
+    margin-right: 10%;
   }
   .popularHotelList {
     margin: 0;
@@ -599,20 +620,26 @@ ul li {
   /* Hebergements à Marseille (mobile)*/
   .hotelBlock {
     background-color: white;
-    margin: 0;
+    margin: auto;
     width: 100%;
   }
   .hotelBlockTitle {
     padding: 0;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 4%;
   }
   .hotelBlockTitle h3 {
-    margin-left: 10px;
+    padding-left: 10px;
   }
   .hotelList {
     flex-direction: column;
+    margin: 0;
+    width: 100%;
   }
   .hotelArticle {
-    width: 90%;
+    min-width:200px;
+    width: 88%;
     box-shadow: 0 0 5px 0 #7e7e7e;
   }
   .hotelArticle a {
@@ -620,6 +647,7 @@ ul li {
   }
   .hotelMore {
     padding: 0;
+    margin-left: 4%;
   }
   .hotelMore a {
     margin-left: 10px;
@@ -629,27 +657,40 @@ ul li {
   #activites {
     flex-direction: column;
   }
+  #activites p {
+      padding-left:0;
+  }
+  .activiteBlockTitle {
+    /*padding: 0;*/
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 4%;
+  }
   .activiteBlockTitle h3 {
-    margin-left: 10px;
+    padding-left: 10px;
   }
   .activiteList {
     flex-direction: column;
     align-content: center;
+    margin: 0;
+    width: 100%;
   }
   .activiteBlockOneArticle {
+    min-width:200px;
     margin: auto;
-    width: 90%;
+    width: 88%;
   }
   .activiteBlockTwoArticles {
+    min-width:200px;
     margin: auto;
-    width: 90%;
+    width: 88%;
   }
-  .activiteArticleBig {
+  /*.activiteArticleBig {
     margin-bottom: 20px;
   }
   .activiteArticleMedium {
     margin-bottom: 20px;
-  }
+  }*/
   .activiteImgBig {
     height: 125px;
   }
@@ -663,6 +704,8 @@ ul li {
   }
   .footerColumn {
     padding-top: 20px;
+    margin-left: 4%;
+    padding-left: 10px;
   }
   .footerColumn h3 {
     font-family: "Raleway_2", serif;
@@ -678,69 +721,68 @@ ul li {
 }
 
 /*version tablette*/
-@media screen and (min-width: 480px) and (max-width:1400px)
-{
-    /*Hebergements (tablette)*/
-    #hebergements{
-        flex-direction: column-reverse;
-    }
+@media screen and (min-width: 670px) and (max-width: 1400px) {
+  /*Hebergements (tablette)*/
+  #hebergements {
+    flex-direction: column-reverse;
+  }
 
-    /* Hebergements à Marseille (tablette)*/
-    .hotelBlock{
-        width: 100%;
-    }
-    .hotelBlockTitle{
-        display: flex;
-        justify-content: center;
-        font-size: 25px;
-    }
-    .hotelMore{
-        display: flex;
-        justify-content: center;
-    }
+  /* Hebergements à Marseille (tablette)*/
+  .hotelBlock {
+    width: 100%;
+  }
+  .hotelBlockTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .hotelMore {
+    display: flex;
+    justify-content: center;
+  }
 
-    /* Hebergements populaires (tablette)*/
-    .popularHotelBlock{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .popularHotelBlockTitle{
-        justify-content: space-between;
-        width: 80%;
-        margin: auto;
-    }
+  /* Hebergements populaires (tablette)*/
+  .popularHotelBlock {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .popularHotelBlockTitle {
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
 
-    /* Activites (tablette)*/                                                             /* activiter pour la partit tablette */
-    #activites{
-        flex-direction: column;
-    }
-    .activiteBlockTitle{
-        display: flex;
-        justify-content: center;
-        font-size: 25px;
-    }
-    .activiteList{
-        flex-direction: column;
-        align-content: center;
-    }
-    .activiteBlockOneArticle {
-        margin: auto;
-        width: 70%;
-    }
-    .activiteBlockTwoArticles{
-        margin: auto;
-        width: 70%;
-    }
-    .activiteArticleBig{
-        margin-bottom: 20px;
-    }
-    .activiteArticleMedium{
-        margin-bottom: 20px;
-    }
-    .activiteImgBig{
-        height: 125px;
-    }
-    .activiteImgMedium{
-        height: 125px;
-    }
+  /* Activites (tablette)*/ /* activiter pour la partit tablette */
+  #activites {
+    flex-direction: column;
+  }
+  .activiteBlockTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .activiteList {
+    flex-direction: column;
+    align-content: center;
+  }
+  .activiteBlockOneArticle {
+    margin: auto;
+    width: 70%;
+  }
+  .activiteBlockTwoArticles {
+    margin: auto;
+    width: 70%;
+  }
+  .activiteArticleBig {
+    margin-bottom: 20px;
+  }
+  .activiteArticleMedium {
+    margin-bottom: 20px;
+  }
+  .activiteImgBig {
+    height: 125px;
+  }
+  .activiteImgMedium {
+    height: 125px;
+  }
 }
