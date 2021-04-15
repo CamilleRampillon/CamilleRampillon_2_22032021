@@ -12,11 +12,15 @@
 
 body {
   margin: 0;
+  font-family: "Raleway", sans-serif;
+  padding-right:0;
 }
+
 .container {
   font-family: "Raleway", sans-serif;
   max-width: 1500px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 
@@ -36,8 +40,8 @@ body {
   height: 80px;
   background-color: white;
   z-index: 1000;
-}
-.logo {
+  margin-left: auto;
+  margin-right: auto;
 }
 #logo {
   height: 50px;
@@ -220,7 +224,7 @@ body {
   border-radius: 15px;
 }
 .hotelBlockTitle {
-  padding-left: 38px;
+  margin-left: 4%;
   height: 52px;
 }
 .hotelBlockTitle h3 {
@@ -292,7 +296,8 @@ body {
   color: #a8a8a8;
 }
 .hotelMore {
-  padding: 20px 38px;
+  margin-left: 4%;
+  padding-top: 20px;
 }
 .hotelMore a {
   text-decoration: none;
@@ -315,6 +320,9 @@ body {
   align-items: center;
   font-family: "Raleway_2", serif;
   height: 52px;
+
+  margin-left: 4%;
+  margin-right: 4%;
 }
 .popularHotelArticle {
   background-color: white;
@@ -443,16 +451,14 @@ body {
 
 /*Footer*/
 footer {
-  max-width: 1500px;
-}
-.footerContent {
-  display: flex;
-  justify-content: space-around;
   background-color: #f2f2f2;
 }
+.footerContent {
+  display:flex;
+  justify-content: space-around;
+}
 .footerColumn {
-  margin-right: auto;
-  padding-left: 30px;
+    margin-right: auto;
 }
 .footerColumn h3 {
   font-family: "Raleway_2", serif;
@@ -494,8 +500,6 @@ ul li {
     padding-left: 20px;
     padding-top: 10px;
     background-color: white;
-    margin-left: 4%;
-    margin-right: 4%;
   }
   .headerNav {
     width: 100%;
@@ -519,7 +523,7 @@ ul li {
     border-bottom: #d8d8d8 3px solid;
     background-color: white;
   }
-  .navLinkHover:hover {
+  .navLinkHoverMobile:hover {
     border-top: hidden;
     padding: 15px 0 8px 0;
     border-bottom: #0065fc 3px solid;
@@ -721,7 +725,16 @@ ul li {
 }
 
 /*version tablette*/
-@media screen and (min-width: 670px) and (max-width: 1400px) {
+@media screen and (min-width: 670px) and (max-width: 1024px) {
+    body{
+        padding-right: 4%;
+    }
+    /*Header*/
+  .headerNav{
+      margin-right: 4%;
+      padding-right: 4%;
+  }
+
   /*Hebergements (tablette)*/
   #hebergements {
     flex-direction: column-reverse;
