@@ -795,11 +795,17 @@ ul li {
     align-content: center;
   }
   .activiteBlockOneArticle {
-    margin: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-top: 10px;
     width: 80%;
   }
   .activiteBlockTwoArticles {
-    margin: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-top: 10px;
     width: 80%;
   }
   .activiteArticleBig {
